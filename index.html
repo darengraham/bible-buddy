@@ -2,62 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Buddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #f0f8ff, #e6ffe6);
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(160deg, #e6f7f1, #f9fbf9);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
+      padding: 2rem;
     }
-
-    header {
-      margin-top: 20px;
-      text-align: center;
+    .logo {
+      margin-bottom: 1.5rem;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
-    header img {
-      max-width: 80px;
-      margin-bottom: 10px;
+    .logo img {
+      max-width: 60%;
     }
-
-    header h1 {
-      font-size: 2em;
-      color: #2c3e50;
-      margin: 0;
-    }
-
-    iframe {
+    .chat-wrapper {
       width: 100%;
       max-width: 420px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    iframe {
+      width: 100%;
       height: 600px;
       border: none;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      margin: 20px;
+      display: block;
     }
-
-    footer {
-      font-size: 0.8em;
-      color: #666;
-      margin-bottom: 20px;
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+      max-width: 420px;
+    }
+    .footer p:first-child {
+      font-style: italic;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .footer p:last-child {
+      color: #3B81F6;
+      font-weight: bold;
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="bible icon.png" alt="Bible Buddy Icon">
-    <h1></h1>
-  </header>
-
-  <iframe src="https://www.chatbase.co/chatbot-iframe/CWvuwZi6m5xszdlI6NQCJ" allow="microphone; clipboard-write"></iframe>
-
-  <footer>
-    “Trust in the Lord with all your heart and lean not on your own understanding.” – Proverbs 3:5
-  </footer>
+  <div class="logo">
+    <img src="bible%20icon.png" alt="Bible Buddy Logo">
+  </div>
+  <div class="chat-wrapper">
+    <iframe src="https://www.chatbase.co/chatbot-iframe/CWvuwZi6m5xszdlI6NQCJ"></iframe>
+  </div>
+  <div class="footer">
+    <p>This chat is private, nonjudgmental, and grounded in Scripture. It is not a substitute for pastoral, legal, or mental health advice.</p>
+    <p>“Trust in the Lord with all your heart and lean not on your own understanding.” &ndash; Proverbs 3:5</p>
+  </div>
 </body>
 </html>
